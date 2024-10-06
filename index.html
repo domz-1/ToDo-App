@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>To Do</title>
+</head>
+<body>
+    <button class="theme" onclick="themeChange()"><i class="fa-solid fa-cloud-moon"></i></button>
+    <button class="trash" onclick="deletAll()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    <div class="container">
+        <nav>
+            <div class="logo"></div>
+            <h1>To Do</h1>
+        </nav>
+        <div class="dateTime">
+            <p id="date"></p>
+        </div>
+        <main>
+            <div class="mytasks">
+                <h3>UnFinished Tasks</h3>
+                <ul class="mytasks-list">
+                </ul> 
+            </div>
+            <div class="done">
+                <h3>Finished Tasks</h3>
+                <ul class="done-list">
+                </ul>
+                <div class="imgdone">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                </div>
+            </div>
+            <div class="add card">
+                    <div class="add-task">
+                        <input type="text" placeholder="Add Task">
+                        <button onclick="addTask()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+            </div><!-- End OF AddCard -->
+        </main><!-- End OF Main -->
+    </div><!-- End OF Container -->
+    <script src="main.js"></script>
+</body>
+</html>
